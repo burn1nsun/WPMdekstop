@@ -1,0 +1,56 @@
+﻿<Window x:Class="WPMdesktop.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPMdesktop"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="Settings" Height="144.75" Width="192.333">
+
+
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="129" Margin="0,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="192"/>
+        <CheckBox x:Name="trayMenuCheckBox" Content="Tray menu" HorizontalAlignment="Left" Margin="4,36,0,0" VerticalAlignment="Top" IsChecked="True" Checked="trayMenuCheckBox_Checked" Unchecked="trayMenuCheckBox_Unchecked" BorderBrush="#FF22006C" Foreground="#FF22006C"/>
+        <CheckBox x:Name="checkBoxIdlePause" Content="Idle pause" HorizontalAlignment="Left" Margin="4,56,0,0" VerticalAlignment="Top" IsChecked="True" ToolTip="Pauses after 5 seconds of inactivity, resumes when typing is detected." Foreground="#FF22006C" BorderBrush="#FF22006C" Unchecked="checkBoxIdlePause_Unchecked" Checked="checkBoxIdlePause_Checked"/>
+        <Label x:Name="idleTimerSliderValue" Content="{Binding Value, ElementName=idleTimeSlider}" HorizontalAlignment="Left" Margin="146,76,0,0" VerticalAlignment="Top" Width="40" Foreground="#FF22006C"/>
+        <Slider x:Name="idleTimeSlider" HorizontalAlignment="Left" Margin="4,102,0,0" VerticalAlignment="Top" Width="182" Minimum="1" ValueChanged="idleTimeSlider_ValueChanged" Foreground="#FFAE00FF" BorderBrush="#FF891414" Background="{x:Null}" TickFrequency="0.5" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Value="4">
+        </Slider>
+
+
+        <Label x:Name="label" Content="Idle pause timer (seconds):" HorizontalAlignment="Left" Margin="0,76,0,0" VerticalAlignment="Top" Width="156" Foreground="#FF22006C"/>
+        <Border BorderBrush="#FF22006C" BorderThickness="1" Height="29" VerticalAlignment="Top" Background="#FF22006C" MouseDown="Border_MouseDown"/>
+        <Button x:Name="CloseButton" Content="x" Margin="136,0,0,121" BorderBrush="#FFCBC9C9" Background="#FF22006C" Foreground="White" RenderTransformOrigin="0.5,0.5" Click="CloseButton_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="bdr_main" BorderThickness="1" BorderBrush="Black" Background="#FF381F6E">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Content" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bdr_main" Property="Background" Value="Red"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bdr_main" Property="Background" Value="Black"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Settings" x:Name="Title" Foreground="White" Margin="0,0,88,116" RenderTransformOrigin="0.549,0.518" FontSize="14" FontFamily="Yu Gothic Medium" MouseDown="Title_MouseDown" />
+
+
+
+
+    </Grid>
+</Window>

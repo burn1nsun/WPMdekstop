@@ -1,0 +1,42 @@
+﻿<Window x:Class="WPMdesktop.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPMdesktop"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="About" Height="309.244" Width="415.126" ShowInTaskbar="False" SizeToContent="WidthAndHeight" ResizeMode="NoResize"
+        Name="AboutWindow">
+    <Grid Margin="0,0,10,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="261*"/>
+            <ColumnDefinition Width="136*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle x:Name="TitleBar" Fill="#FF22006C" HorizontalAlignment="Left" Height="26" Stroke="Black" VerticalAlignment="Top" Width="417" Grid.ColumnSpan="2" Margin="0,0,-12,0" MouseDown="TitleBar_MouseDown"/>
+        <Label x:Name="Title" Content="About WPMdesktop" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.086,-0.17" Width="118" Foreground="White" MouseDown="Title_MouseDown"/>
+        <Label x:Name="label1" Content="This program is made so you could test your WPM with the freedom of &#xA;being able to type whatever and wherever you want. For example, you &#xA;can see how fast you can type 150 words in your essay. This gives you &#xA;the freedom to see your &quot;real&quot; WPM, instead of having to read and write&#xA;paragraphs from a site, you can see the speed of the things you'd&#xA;be actually writing in a realistic situation.&#xA;&#xA;WPM is based on the amount of keystrokes, where 5 keystrokes equals &#xD;&#xA;1 word, for example &quot;I run&quot; equals one word, whereas &quot;rhinoceros&quot; counts &#xD;&#xA;for two. WPMdesktop is currently limited to the US layout.&#xD;&#xA;(But its functional for most layouts due to the characters still being&#xD;&#xA;counted). More layouts might be added in the future depending on the&#xD;&#xA;popularity of the program.&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,31,-10,0" VerticalAlignment="Top" Height="218" Width="407" Grid.ColumnSpan="2"/>
+        <Separator HorizontalAlignment="Left" Height="27" Margin="0,15,-12,0" VerticalAlignment="Top" Width="417" Background="#FF320049" Grid.ColumnSpan="2"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="0,134,-12,0" VerticalAlignment="Top" Width="417" Background="#FF320049" Grid.ColumnSpan="2"/>
+        <Label x:Name="VersionLabel" Content="version 1.0.0.12.16" HorizontalAlignment="Left" Margin="0,252,0,0" VerticalAlignment="Top" Width="123" FontSize="7" Foreground="#FF666666"/>
+        <Button x:Name="CloseButton" Content="X" Grid.Column="1" HorizontalAlignment="Left" Margin="161,0,-70,0" VerticalAlignment="Top" Width="48" Height="19" FontSize="10" BorderBrush="Black" Background="#FF381F6E" Foreground="White" Click="CloseButton_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="bdr_main" BorderThickness="1" BorderBrush="Black" Background="#FF381F6E">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Content" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bdr_main" Property="Background" Value="Red"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bdr_main" Property="Background" Value="Black"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+    </Grid>
+</Window>
