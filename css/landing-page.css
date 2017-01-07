@@ -7,6 +7,21 @@
  li > a {
   color: #22006C;
  }
+
+ input[type="Submit"] {
+   font-size: 18px;
+}
+
+ .navbarTitle {
+  margin: 5px;
+   color: #f8f8f8;
+   padding: 10px 15px;
+ }
+
+ .navbarTitle:hover {
+   text-align: center;
+   color: #f8f8f8;
+ }
 body,
 html {
     width: 100%;

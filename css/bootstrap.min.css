@@ -3152,19 +3152,19 @@ fieldset[disabled] a.btn {
 }
 .btn-default.focus,
 .btn-default:focus {
-    color: #b999ff;
+    color: #22006C;
     background-color: #e6e6e6;
     border-color: #8c8c8c
 }
 .btn-default:hover {
-    color: #b999ff;
+    color: #22006C;
     background-color: #e6e6e6;
     border-color: #adadad
 }
 .btn-default.active,
 .btn-default:active,
 .open>.dropdown-toggle.btn-default {
-    color: #b999ff;
+    color: #22006C;
     background-color: #e6e6e6;
     border-color: #adadad
 }
@@ -3177,7 +3177,7 @@ fieldset[disabled] a.btn {
 .open>.dropdown-toggle.btn-default.focus,
 .open>.dropdown-toggle.btn-default:focus,
 .open>.dropdown-toggle.btn-default:hover {
-    color: #b999ff;
+    color: #22006C;
     background-color: #d4d4d4;
     border-color: #8c8c8c
 }
