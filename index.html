@@ -30,7 +30,16 @@
 </head>
 
 <body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-89956470-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -163,7 +172,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Download<br>WPMdesktop</h2>
-                    <p class="lead">Download WPMdesktop for<a target="_blank" href="download/WPMdesktopSetup.msi" download> Windows.</a></p>
+                    <p class="lead">Download WPMdesktop for<a target="_blank" href="download/WPMdesktopSetup.msi" onClick="ga('send', 'event', { eventCategory: 'download', eventAction: 'click', eventLabel: 'WPMdesktopInstaller', eventValue: 1});" download> Windows.</a></p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/windows.png" alt="" style="width:195px; height: 197px;">
