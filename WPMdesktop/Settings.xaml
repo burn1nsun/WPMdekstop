@@ -16,7 +16,7 @@
         <CheckBox x:Name="trayMenuCheckBox" Content="Tray menu" HorizontalAlignment="Left" Margin="4,36,0,0" VerticalAlignment="Top" IsChecked="True" Checked="trayMenuCheckBox_Checked" Unchecked="trayMenuCheckBox_Unchecked" BorderBrush="#FF22006C" Foreground="#FF22006C"/>
         <CheckBox x:Name="checkBoxIdlePause" Content="Idle pause" HorizontalAlignment="Left" Margin="4,56,0,0" VerticalAlignment="Top" IsChecked="True" ToolTip="Pauses after 5 seconds of inactivity, resumes when typing is detected." Foreground="#FF22006C" BorderBrush="#FF22006C" Unchecked="checkBoxIdlePause_Unchecked" Checked="checkBoxIdlePause_Checked"/>
         <Label x:Name="idleTimerSliderValue" Content="{Binding Value, ElementName=idleTimeSlider}" HorizontalAlignment="Left" Margin="146,76,0,0" VerticalAlignment="Top" Width="40" Foreground="#FF22006C"/>
-        <Slider x:Name="idleTimeSlider" HorizontalAlignment="Left" Margin="4,102,0,0" VerticalAlignment="Top" Width="182" Minimum="1" ValueChanged="idleTimeSlider_ValueChanged" Foreground="#FFAE00FF" BorderBrush="#FF891414" Background="{x:Null}" TickFrequency="0.5" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Value="4">
+        <Slider x:Name="idleTimeSlider" HorizontalAlignment="Left" Margin="4,102,0,0" VerticalAlignment="Top" Width="182" Minimum="0.5" ValueChanged="idleTimeSlider_ValueChanged" Foreground="#FFAE00FF" BorderBrush="#FF891414" Background="{x:Null}" TickFrequency="0.5" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Value="4">
         </Slider>
 
 

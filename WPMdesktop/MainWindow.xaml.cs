@@ -281,7 +281,7 @@ namespace WPMdesktop
             }
 
             StopButton.IsEnabled = true;
-            ClockTextBlock.Visibility = Visibility.Visible;
+            
             this.StartButton.IsEnabled = false;
             this.textBoxWordAmount.IsEnabled = false;
             this.checkBoxWordAmount.IsEnabled = false;
@@ -449,9 +449,7 @@ namespace WPMdesktop
                         }
                         if (e.KeyPressed.Last() == Key.F2)
                         {
-                            Console.WriteLine("test");
                             stopReading();
-                            trayMenu.ClockTextBlock.Text = "00:00:00";
                         }
                     }
                     //MODIFIER KEY PLUS KEY
