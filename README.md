@@ -5,6 +5,6 @@ WPMdesktop is a program that calculates your WPM from anywhere with the freedom 
 
 Currently its only limited to the US layout when displaying the input, although that does not affect WPM, it only affects the symbols inserted, for example EST layout "Õ" results in "]" in the US layout.
 
-Website: https://burn1nsun.github.io/WPMdesktop/
+Website: http://www.wpmdesktop.com/
 
 /u/burn1nsun
