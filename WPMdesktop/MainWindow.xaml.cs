@@ -354,6 +354,7 @@ namespace WPMdesktop
             this.checkBoxTime.IsChecked = false;
             this.checkBoxWordAmount.IsChecked = false;
             this.label_status_text.Content = "Reset.";
+            wordCount = 0;
             this.wordCountLabel.Content = "";
             this.textBoxWordAmount.IsEnabled = false;
             this.textBoxTime.IsEnabled = false;

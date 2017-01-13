@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6D272A5F3915ADF6E2AC8FF5E25F536B"
+        "OwnerKey" = "8:_6598323DEEC2465CA9AD08B3C30866D7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6598323DEEC2465CA9AD08B3C30866D7"
+        "OwnerKey" = "8:_6D272A5F3915ADF6E2AC8FF5E25F536B"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -61,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -77,6 +85,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -139,7 +155,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BD352F815F5D4F52BFB71991660158B3"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\..\\Desktop\\logo.ico"
+            "SourcePath" = "8:E:\\Desktop\\logo.ico"
             "TargetName" = "8:logo.ico"
             "Tag" = "8:"
             "Folder" = "8:_3E717D917924491EB354D87B27CDE757"
@@ -334,6 +350,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_44C18B64B0F04A52891B7A205073C169"
+            {
+            "Name" = "8:WPMdesktop"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_6598323DEEC2465CA9AD08B3C30866D7"
+            "Folder" = "8:_8CF58E6737004CC1A119E799CC7D6BBF"
+            "WorkingFolder" = "8:_3E717D917924491EB354D87B27CDE757"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5CE818C735B1491591BBB66B05CBE88C"
             {
             "Name" = "8:WPMdesktop"
